@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 2px solid white;
+
 }
 
 .App-logo {
@@ -11,17 +21,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,3 +35,60 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  border: 2px solid pink;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* root */
+.row-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 25px;
+  max-width: 1600px;
+  min-height: 100vh;
+
+}
+/* parent */
+.recent-runs {
+  border: 2px solid blue;
+  min-width: 750px;
+  padding: 25px;
+  min-height: 100vh;
+
+}
+
+/* parent */
+.model-list {
+  border: 2px solid yellow;
+  padding: 25px;
+  min-width: 620px;
+  min-height: 100vh;
+
+}
+/* child */
+.list {
+  border: 2px solid cyan;
+
+}
+/* child */
+.graph {
+  border: 2px solid green;
+
+}
+
+
+.footer {
+  border: 2px solid purple
+}
+
