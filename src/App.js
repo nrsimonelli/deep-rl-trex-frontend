@@ -14,15 +14,38 @@ class App extends Component {
           <div>icons</div>
         </div>
         <div className='row-container'>
-          <div className='recent-runs'>
-            recent runs here
+          <div className='model-container'>
+            <div>
+            model names listed here
+            </div>
+            <div>
+              table summary of models
+            </div>
+            <div>
+              chart with model run stats
+            </div>
           </div>
-          <div className='model-list'>
+          <div className='run-container'>
             <div className='list'>
-            list
+              <div>
+              list of recent runs
+
+              </div>
+            <ul>
+              <li>run a</li>
+              <li>run b</li>
+              <li>run c</li>
+              <li>run d</li>
+            </ul>
             </div>
             <div className='graph'>
-            graph / chart here
+              <div>
+              selected run details...
+
+              </div>
+              <div>
+                table / chart
+              </div>
             </div>
           </div>
           
