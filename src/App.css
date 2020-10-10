@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 2px solid white;
+
 }
 
 .App-logo {
@@ -13,17 +23,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +34,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 1308px) {
+
+  .model-container {
+    max-width: 800px;
+    height: 85vh;
+  }
+  .run-container {
+    max-width: 400px;
+    height: 85vh;
+  }
+}
+
+.title {
+  border: 2px solid pink;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* root */
+.row-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 25px;
+  max-width: 1600px;
+  min-height: 100vh;
+
+}
+/* parent */
+.model-container {
+  border: 2px solid blue;
+  width: 90vw;
+  padding: 25px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+/* children */
+.model-title {
+  border: 2px solid yellow;
+  width: 80vw;
+  max-width: 1500px;
+  height: 60px;
+
+
+}
+.model-table {
+  border: 2px solid green;
+  
+
+}
+.model-chart {
+  border: 2px solid pink;
+  
+
+}
+
+/* parent */
+.run-container {
+  border: 2px solid yellow;
+  padding: 25px;
+  width: 90vw;
+
+
+}
+/* child */
+.list {
+  border: 2px solid cyan;
+
+}
+/* child */
+.graph {
+  border: 2px solid green;
+
+}
+
+
+.footer {
+  border: 2px solid purple
+}
+
+
+
+table {
+  border-collapse: collapse;
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #3d3d3d;
 }
