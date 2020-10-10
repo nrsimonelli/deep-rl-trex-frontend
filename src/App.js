@@ -19,7 +19,38 @@ class App extends Component {
             model title
             </div>
             <div className='model-table'>
-              table summary of models
+            table summary of models
+              <table>
+                <tr>
+                  <th>h1</th>
+                  <th>h2</th>
+                  <th>h3</th>
+                  <th>h4</th>
+                  <th>h5</th>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+              </table>
+              
             </div>
             <div className='model-chart'>
               chart with model run stats
