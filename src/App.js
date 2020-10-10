@@ -15,13 +15,13 @@ class App extends Component {
         </div>
         <div className='row-container'>
           <div className='model-container'>
-            <div>
-            model names listed here
+            <div className='model-title'>
+            model title
             </div>
-            <div>
+            <div className='model-table'>
               table summary of models
             </div>
-            <div>
+            <div className='model-chart'>
               chart with model run stats
             </div>
           </div>
