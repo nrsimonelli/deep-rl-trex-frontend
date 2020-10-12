@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import { connect } from 'react-redux';
+import ModelList from '../ModelList/ModelList';
+import RunList from '../RunList/RunList';
 
 class App extends Component {
   componentDidMount() {
-    this.props.dispatch({ type: 'LIST_RUNS' });
+    this.props.dispatch({ type: 'GET_RUN' });
     this.props.dispatch({ type: 'GET_MODEL' });
   }
 
@@ -20,48 +22,7 @@ class App extends Component {
           <div>icons</div>
         </div>
         <div className='row-container'>
-          <div className='model-container'>
-            <div className='model-title'>
-            model title
-            </div>
-            <div className='model-table'>
-            table summary of models
-              <table>
-                <tr>
-                  <th>h1</th>
-                  <th>h2</th>
-                  <th>h3</th>
-                  <th>h4</th>
-                  <th>h5</th>
-                </tr>
-                <tr>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                </tr>
-                <tr>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                </tr>
-                <tr>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                  <td>data</td>
-                </tr>
-              </table>
-              
-            </div>
-            <div className='model-chart'>
-              chart with model run stats
-            </div>
-          </div>
+          <ModelList />
           <RunList />
         </div>
         <div className='footer'>

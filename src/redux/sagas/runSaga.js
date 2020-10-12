@@ -17,7 +17,7 @@ function* getRun() {
 };
 
 function* runSaga() {
-    yield takeEvery('GET_RUN', getRun);
+    yield takeEvery('GET_RUN', getRun );
 };
 
 export default runSaga;
