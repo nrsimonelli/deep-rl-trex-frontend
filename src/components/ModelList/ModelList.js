@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-
-
-
-
-class RunList extends Component {
+class ModelList extends Component {
 
   render() {
     return (
