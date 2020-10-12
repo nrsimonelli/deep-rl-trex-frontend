@@ -4,6 +4,10 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import { connect } from 'react-redux';
 
 class App extends Component {
+  componentDidMount() {
+    this.props.dispatch({ type: 'LIST_RUNS' });
+    this.props.dispatch({ type: 'GET_MODEL' });
+  }
 
   render() {
     return (
@@ -58,31 +62,7 @@ class App extends Component {
               chart with model run stats
             </div>
           </div>
-          <div className='run-container'>
-            <div className='list'>
-              <div>
-              list of recent runs
-
-              </div>
-            <ul>
-              <li>run a</li>
-              <li>run b</li>
-              <li>run c</li>
-              <li>run d</li>
-            </ul>
-            </div>
-            <div className='graph'>
-              <div>
-              selected run details...
-
-              </div>
-              <div>
-                table / chart
-              </div>
-            </div>
-          </div>
-          
-          
+          <RunList />
         </div>
         <div className='footer'>
             footer here
