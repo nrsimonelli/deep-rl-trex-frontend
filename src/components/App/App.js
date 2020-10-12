@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import mapStoreToProps from '../../redux/mapStoreToProps';
+import { connect } from 'react-redux';
 
 class App extends Component {
 
@@ -91,4 +93,4 @@ class App extends Component {
   } // end render
 } // end class
 
-export default App;
+export default connect(mapStoreToProps)(App);
