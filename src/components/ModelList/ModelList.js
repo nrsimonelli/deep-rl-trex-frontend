@@ -22,9 +22,9 @@ class ModelList extends Component {
             <tbody>
               {this.props.model.map(item => 
                 <tr key={item.id}>
-                  <td>{item.col_name}</td>
-                  <td>{item.col_name}</td>
-                  <td>{item.col_name}</td>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.echo}</td>
                 </tr>  
               )}
             </tbody>

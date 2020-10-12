@@ -17,9 +17,9 @@ class RunList extends Component {
         <tbody>
           {this.props.run.map(item => 
             <tr key={item.id}>
-              <td>{item.col_name}</td>
-              <td>{item.col_name}</td>
-              <td>{item.col_name}</td>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.note}</td>
             </tr>
           )}
         </tbody>
